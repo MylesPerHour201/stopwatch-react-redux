@@ -10,6 +10,6 @@ export const pauseTimer = () => ({
     type: PAUSE_TIMER
 });
 
-export const resetTIMER = () => ({
+export const resetTimer = () => ({
     type: RESET_TIMER
 });

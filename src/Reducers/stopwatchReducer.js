@@ -1,6 +1,11 @@
 import { START_TIMER, PAUSE_TIMER, RESET_TIMER } from "../Actions/stopwatchActions";
 
-const stopwatchReducer = (state, action) => {
+const initialState = {
+    time: 0,
+    running: false
+};
+
+const stopwatchReducer = (state = initialState, action) => {
     switch (action.type) {
         case START_TIMER:
             return {...state, running: true};
